@@ -1,0 +1,368 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* button{
+  transition: all 200ms ease-out;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+header{
+  margin-inline: 10%;
+}
+
+nav{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: hsl(0, 0%, 42%);
+  transition: all 200ms ease-out;
+}
+
+nav ul li a:hover{
+  color: hsl(0, 0%, 0%) ;
+}
+
+.view-plans{
+  margin-left: 1rem;
+  border: 1.5px solid hsl(256, 26%, 20%);
+  background-color: #ffffff;
+  padding: 7px 14px;
+  font-weight: 600;
+}
+
+.view-plans:hover{
+  background-color: hsl(256, 26%, 20%);
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+}
+
+.hero-section{
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  background-color: hsl(256, 26%, 20%);
+  color: #ffffff;
+}
+
+.hero-section .text{
+  margin-left: 10%;
+}
+
+.hero-section hr{
+  width: 6rem;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+
+.hero-section h1{
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section button{
+  margin-left: 0;
+  background: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.hero-section button:hover{
+  background-color: #ffffff;
+  color: hsl(256, 26%, 20%);
+  border: 1.5px solid hsl(256, 26%, 20%);
+}
+
+.image .family{
+  height: 30rem;
+  margin-right: 15rem;
+  margin-top: 5rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.pattern-right{
+  height: 25rem;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.pattern-left{
+  height: 20rem;
+  position: absolute;
+  left: 0;
+  top: 23rem;
+  z-index: 3;
+}
+
+.we-are-different{
+  margin-top: 15rem;
+  margin-inline: 10%;
+}
+
+.we-are-different hr{
+  width: 6rem;
+  margin-bottom: 3rem;
+}
+
+.we-are-different h1{
+  font-size: 3rem;
+}
+
+.we-are-different-flex{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.we-are-different-flex h2{
+  margin-block: 1rem;
+}
+
+.we-are-different-flex img{
+  height: 4rem;
+}
+
+.findout-more{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-inline: 10%;
+  background-color: hsl(256, 26%, 20%);
+  color: #ffffff;
+  padding: 2rem 4rem;
+  margin-top: 5rem;
+}
+
+.findout-more h1{
+  font-size: 2.5rem;
+}
+
+.how-we-work{
+  background: transparent;
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+  padding: 8px 14px;
+}
+
+.how-we-work:hover{
+  background-color: #ffffff;
+  border: 1.5px solid hsl(256, 26%, 20%);
+  color: hsl(256, 26%, 20%);
+}
+
+.how-img{
+  height: 9.5rem;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+footer{
+  position: relative;
+  background-color: hsl(0, 0%, 98%);
+  margin-top: 5rem;
+  padding: 4rem 9rem;
+}
+
+.insure-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socials{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.socials img{
+  height: 1rem;
+}
+
+footer hr{
+  margin-block: 1rem;
+}
+
+footer p{
+  margin-block: 1rem;
+  color: hsl(0, 0%, 42%);
+}
+
+.footer-description{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+footer ul{
+  list-style-type: none;
+}
+
+footer ul li{
+  margin-block: .5rem;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: hsl(256, 26%, 20%);
+  transition: underline
+   200ms ease-out;
+}
+
+footer ul li a:hover{
+  text-decoration: underline;
+}
+
+.footer-pattern{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 13rem;
+}
+
+.hamburger{
+  display: none;
+}
+
+@media screen and (max-width:480px) {
+  nav ul{
+    display: none;
+  }
+
+  .hamburger{
+    display: flex;
+  }
+
+  header{
+    margin-inline: 0;
+  }
+
+  .logo{
+    margin-left: 10%;
+  }
+
+  .hamburger{
+    margin-right: 10%;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+  }
+
+  #ul.active{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: hsl(216, 30%, 68%);
+    z-index: 5;
+    margin: 0;
+    gap: 1rem;
+    font-size: 1.25rem;
+    transform: translateX(0);
+    transition: all 200ms ease-out;
+  }
+
+  nav ul{
+    transition: all 200ms ease-out;
+    transform: translateX(-1rem);
+  }
+
+  nav ul li a{
+    color: #ffffff;
+  }
+
+  .hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero-section h1{
+    font-size: 3rem;
+  }
+
+  .hero-section .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding-inline: 10%;
+  }
+
+  .image .family{
+    margin-right: 0;
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .we-are-different{margin-top: 30rem;}
+
+  .we-are-different-flex{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .findout-more{
+    flex-direction: column;
+  }
+
+  .how-we-work{
+    margin-top: 2rem;
+  }
+
+  .insure-flex{
+    flex-direction: column;
+  }
+
+  .footer-description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .socials{
+    margin-top: 1rem;
+  }
+
+  footer ul li{
+    margin-block: 0;
+  }
+}
